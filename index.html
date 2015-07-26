@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head><title>Piano</title>
+<meta charset="UTF-8">
+<meta name="description" content="Portfolio">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Devin Scott">
+
+
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<link href="style.css" rel="stylesheet" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+<div id="p-wrapper">
+	<ul id="piano">
+		<li class="zero"><div class="anchor"></div></li>
+		<li><div class="anchor one"></div><span class="a"></span></li>
+		<li><div class="anchor two"></div><span class="b"></span></li>
+		<li><div class="anchor three"></div></li>
+		<li><div class="anchor four"></div><span class="c"></span></li>
+		<li><div class="anchor five"></div><span class="d"></span></li>
+		<li><div class="anchor six"></div></li>
+		
+		
+		
+	
+		<li><div class="anchor seven"></div><span class="e"></span></li>
+		<li><div class="anchor eight"></div></li>
+		<li><div class="anchor nine"></div><span class="f"></span></li>
+		<li><div class="anchor ten"></div><span class="g"></span></li>
+		<li><div class="anchor eleven"></div><span class="h"></span></li>
+	
+		
+		
+	</ul>
+</div>
+<p class="rotate">DEVIN SCOTT</p>
+
+
+
+</div>
+
+
+<script>
+
+$(document).ready( function() {
+
+var sound=['<embed id="embed_player" src="key0.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key1.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key2.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key3.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key4.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key5.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key6.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key7.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key8.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key9.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key10.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="key11.wav" autostart="true" hidden="true"></embed>'];
+
+var up=['<embed id="embed_player" src="keya.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="keyb.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="keyc.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="keyd.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="keye.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="keyf.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="keyg.wav" autostart="true" hidden="true"></embed>',
+'<embed id="embed_player" src="keyh.wav" autostart="true" hidden="true"></embed>'];
+
+
+
+
+
+
+
+
+
+function play(select, audio){
+$(select).click(function(){
+   $('#wrap').append(audio);
+});
+
+}
+<!--keys-->
+play(".zero", sound[0]);
+play(".one", sound[1]);
+play(".two", sound[2]);
+play(".three", sound[3]);
+play(".four", sound[4]);
+play(".five", sound[5]);
+play(".six", sound[6]);
+play(".seven", sound[7]);
+play(".eight", sound[8]);
+play(".nine", sound[9]);
+play(".ten", sound[10]);
+play(".eleven", sound[11]);
+play(".a", sound[11]);
+play(".eleven", sound[11]);
+play(".a", up[0]);
+play(".b", up[1]);
+play(".c", up[2]);
+play(".d", up[3]);
+play(".e", up[4]);
+play(".f", up[5]);
+play(".g", up[6]);
+play(".h", up[7]);
+
+
+
+
+
+
+
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
